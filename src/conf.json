@@ -1,0 +1,45 @@
+{
+    "content": [
+        {
+            "start": {
+                "position": {
+                    "x": 10,
+                    "Y": 0,
+                    "Z": 0
+                },
+                "size": 1,
+                "time": 10
+            },
+            "end": {
+                "position": {
+                    "x": 1,
+                    "Y": 0,
+                    "Z": 0
+                },
+                "size": 0.5,
+                "time": 20
+            },
+            "url": "./monimage.png"
+        }, {
+            "start": {
+                "position": {
+                    "x": 10,
+                    "Y": 0,
+                    "Z": 0
+                },
+                "size": 1,
+                "time": 10
+            },
+            "end": {
+                "position": {
+                    "x": 1,
+                    "Y": 0,
+                    "Z": 0
+                },
+                "size": 0.5,
+                "time": 20
+            },
+            "url": "./monimage.png"
+        }
+    ]
+}
