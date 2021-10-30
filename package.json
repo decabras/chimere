@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/decabras/chimere/issues"
   },
-  "homepage": "https://github.com/decabras/chimere#readme"
+  "homepage": "https://github.com/decabras/chimere#readme",
+  "dependencies": {
+    "three": "^0.134.0"
+  }
 }
