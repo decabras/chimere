@@ -1,29 +1,62 @@
-const METHOD = {
+export const METHOD = {
     CONSTANT: "CONSTANT",
     LINEAR: "LINEAR",
 	EASE_IN_OUT: "EASE_IN_OUT",
 }
 
-const SCENE = {
-    images: [
+export const SCENE = {
+    IMAGES: [
         {
-            media: ["01.png"],
+            path: ["001.png"],
+            paralaxDistance: 0.1,
             animation: {
-                start: 0,
-                duration: 5,
+                start: 1,
+                duration: 10,
                 position: [
-                    { t: 0.00, v: [10, 0, 0], f: METHOD.EASE_IN_OUT },
-                    { t: 1.00, v: [ 1, 0, 0], f: METHOD.EASE_IN_OUT }
+                    { t: 0.00, v: [ 5, 5, -10], m: METHOD.EASE_IN_OUT },
+                    { t: 1.00, v: [ 0, 0, 0], m: METHOD.EASE_IN_OUT }
                 ],
-                rotation: [],
-                size: [],
                 opacity: [
-                    { t: 0.00, v: 0.00, f: METHOD.LINEAR },
-                    { t: 0.10, v: 1.00, f: METHOD.LINEAR },
-                    { t: 0.90, v: 1.00, f: METHOD.LINEAR },
-                    { t: 1.00, v: 0.00, f: METHOD.LINEAR }
+                    { t: 0.00, v: [0.00], m: METHOD.LINEAR },
+                    { t: 0.10, v: [1.00], m: METHOD.LINEAR },
+                    { t: 0.90, v: [1.00], m: METHOD.LINEAR },
+                    { t: 1.00, v: [0.00], m: METHOD.LINEAR }
                 ]
             }
-        }
+        }, {
+            path: ["002.png"],
+            paralaxDistance: 0.1,
+            animation: {
+                start: 2,
+                duration: 10,
+                position: [
+                    { t: 0.00, v: [ 5, 0, -10], m: METHOD.EASE_IN_OUT },
+                    { t: 1.00, v: [ 0, 0, 0], m: METHOD.EASE_IN_OUT }
+                ],
+                opacity: [
+                    { t: 0.00, v: [0.00], m: METHOD.LINEAR },
+                    { t: 0.10, v: [1.00], m: METHOD.LINEAR },
+                    { t: 0.90, v: [1.00], m: METHOD.LINEAR },
+                    { t: 1.00, v: [0.00], m: METHOD.LINEAR }
+                ]
+            }
+        }, {
+            path: ["003.png"],
+            paralaxDistance: 0.1,
+            animation: {
+                start: 3,
+                duration: 10,
+                position: [
+                    { t: 0.00, v: [ -5, 5, -10], m: METHOD.EASE_IN_OUT },
+                    { t: 1.00, v: [ 0, 0, 0], m: METHOD.EASE_IN_OUT }
+                ],
+                opacity: [
+                    { t: 0.00, v: [0.00], m: METHOD.LINEAR },
+                    { t: 0.10, v: [1.00], m: METHOD.LINEAR },
+                    { t: 0.90, v: [1.00], m: METHOD.LINEAR },
+                    { t: 1.00, v: [0.00], m: METHOD.LINEAR }
+                ]
+            }
+        },
     ]
 };
